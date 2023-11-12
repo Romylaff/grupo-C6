@@ -14,7 +14,7 @@
   perspective: 20px;
 }
   
-main {
+.hero {
   position: relative;
   display: flex;
   justify-content: center;
@@ -55,16 +55,40 @@ main {
 span {
   font-size: 50px ;
 }
+/* .text1{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-family: var(--ff-2);
+  color: var(--text-color);
+  font-size: 48px;
+  margin-top: 200px;
+} */
+
+.title1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 40px;
+  font-family: var(--ff-2);
+  font-size: 36px;
+  color: var(--text-color);
+}
 section {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section article {  
+  display: flex;
+  flex-direction: row;
   font-family: var(--ff-2);
   font-size: 2rem;
   padding: 2rem;
   padding-bottom: 80px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: var(--background-color);
-  color: black;
 }
 
 section p {
@@ -76,7 +100,8 @@ section p {
   text-align: center;
   text-wrap: balance;
 }
-footer {
+footer{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -88,7 +113,7 @@ footer {
 footer p {
   margin: 0;
   color: var(--text-color);
-  
+  font-family: var(--ff-2);
 }
 
 footer div {

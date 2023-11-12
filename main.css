@@ -9,15 +9,14 @@
     margin: auto;
   }
   
-  .container {
-    width:100%;
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 40px;
     /* background-color: var(--background-color); */
-    background-image: url(./imgs/tile_background3.png);
+    background-image: url(./imgs/tile_background3.webp);
     background-attachment: fixed;
   }
   .card {
