@@ -1,7 +1,7 @@
 :root {
   --background-color: #f8f99f;
   --primary-color:#ffe4e6;
-  --accent-color:#9ff9cd;
+  --accent-color:#3d389a;
   --text-color: #881337;
   --text-size: 1.5rem;
   --ff-1:'Caveat Brush';
@@ -15,6 +15,7 @@
 }
   
 .hero {
+  margin-top: 15px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -44,20 +45,33 @@
   z-index: -1;
 }
 header {
-  position: sticky;
+  width: 95%;
+  position: fixed;
   top: 0;
   z-index: 2;
   font-size: 20px;
   font-family: var(--ff-2);
   text-align: end;
   background-color: var(--primary-color);
-  padding: 5px 20px;
+  background-color: rgba(255, 230, 232, .75);
+  padding: 15px 60px;
 }
 header a {
-  padding-right: 20px;
+  padding: 10px;;
   text-decoration: none;
   color: var(--text-color);
+  border-radius: 10px;
 }
+
+header a:hover {
+  color: var(--primary-color);
+  background-color: var(--text-color);
+}
+
+header a:active {
+  background-color: var(--accent-color);
+}
+
  /* .title {
     font-family: var(--ff-1);
     font-size: 12rem;
@@ -78,7 +92,7 @@ span {
   margin-top: 200px;
 } */
 
-.title1 {
+.text1 {
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
@@ -86,6 +100,16 @@ span {
   font-family: var(--ff-2);
   font-size: 36px;
   color: var(--text-color);
+  scroll-margin-top: 40px;
+}
+.text2{
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+  font-family: var(--ff-2);
+  color: var(--text-color);
+  scroll-margin-top: 40px;
 }
 section {
   display: flex;
@@ -137,6 +161,7 @@ footer div {
 }
 
 footer a i {
+  color: var(--text-color);
   transition: transform 0.3s ease;
 }
 
@@ -145,5 +170,6 @@ footer a:hover i {
 }
 
 footer a:active i {
+  color: var(--accent-color);
   transform: scale(0.9);
 }
