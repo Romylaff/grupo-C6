@@ -29,22 +29,35 @@
 }
   
 .center {
-  transform: translateZ(-10px) scale(1.5);
+  transform: translateZ(-12px) scale(1.7);
 }
 
 .foreground {
   transform: translateZ(-5px) scale(1.5);
 }
 
-.background,
-.foreground {
+.background, .foreground {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -1;
 }
-  
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-size: 20px;
+  font-family: var(--ff-2);
+  text-align: end;
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+}
+header a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
  /* .title {
     font-family: var(--ff-1);
     font-size: 12rem;
