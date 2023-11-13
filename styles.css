@@ -173,3 +173,75 @@ footer a:active i {
   color: var(--accent-color);
   transform: scale(0.9);
 }
+
+/* Estilos para pantallas de tamaño pequeño (menos de 480px)
+@media screen and (max-width: 480px) {
+  /* Ajusta tus estilos para pantallas pequeñas aquí */
+  /* header {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+ .hero .center {
+    background-image: url(./imgs/Patillos+LogoM.webp);
+    }
+  .center {
+    transform: translateZ(-10px) scale(1.5);
+  }
+   */
+  /* .text1, .text2 {
+      font-size: 16px;
+  }
+  article{
+    display: flex;
+    flex-direction: column;
+  }
+  article img {
+    display: none;
+  }
+  article .extra {
+    display: none;
+  }
+  span {
+    font-size: medium;
+  }
+  .container .card {
+    width: 100%;
+    margin: 0;
+  }
+  section p {
+      width: 100%;
+      font-size: 20px;
+  }
+  footer {
+    font-size: 12px;
+  } */
+  /* ... otros estilos ... */
+/* } */
+
+/* Estilos para pantallas de tamaño mediano (entre 481px y 768px) */
+/* @media screen and (min-width: 481px) and (max-width: 768px) { */
+  /* Ajusta tus estilos para pantallas medianas aquí */
+  /* .text1, .text2 {
+      font-size: 30px;
+  }
+  section p {
+      width: 100%;
+      font-size: 28px;
+  }
+  /* ... otros estilos ... */
+/* } */
+
+/* Estilos para tablets (entre 769px y 1024px) */
+/* @media screen and (min-width: 769px) and (max-width: 1024px) { */
+  /* Ajusta tus estilos para tablets aquí */
+  /* .text1, .text2 {
+      font-size: 36px;
+  }
+  section p {
+      width: 100%;
+      font-size: 32px;
+  } */ */
+  /* ... otros estilos ... */
+/* } */ */
+
