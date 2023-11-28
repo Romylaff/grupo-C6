@@ -1,7 +1,243 @@
 :root {
-    --color-primario:#81b000;
-    --color-secundario:#ECEE81;
-    --color-terciario:#008000;
-    --text-size: 1.5rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --background-color: #f8f99f;
+  --primary-color:#ffe4e6;
+  --accent-color:#3d389a;
+  --text-color: #881337;
+  --text-size: 1.5rem;
+  --ff-1:'Caveat Brush';
+  --ff-2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 20px;
+}
+  
+.hero {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+  
+.background {
+  transform: translateZ(-20px) scale(2);
+}
+  
+.center {
+  transform: translateZ(-12px) scale(1.7);
+  margin-left: 2400px;
+}
+
+.center-2{
+  visibility: hidden;
+
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background, .foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+header {
+  width: 95%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  font-size: 20px;
+  font-family: var(--ff-2);
+  text-align: end;
+  background-color: var(--primary-color);
+  background-color: rgba(255, 230, 232, .75);
+  padding: 15px 60px;
+}
+header a {
+  padding: 10px;;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+header a:hover {
+  color: var(--primary-color);
+  background-color: var(--text-color);
+}
+
+header a:active {
+  background-color: var(--accent-color);
+}
+
+ /* .title {
+    font-family: var(--ff-1);
+    font-size: 12rem;
+    color: white;
+    text-shadow: 0 0 5px black;;
+  }
+*/
+span {
+  font-size: 50px ;
+}
+/* .text1{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-family: var(--ff-2);
+  color: var(--text-color);
+  font-size: 48px;
+  margin-top: 200px;
+} */
+
+.text1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 40px;
+  font-family: var(--ff-2);
+  font-size: 36px;
+  color: var(--text-color);
+  scroll-margin-top: 40px;
+}
+.text2{
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+  font-family: var(--ff-2);
+  color: var(--text-color);
+  scroll-margin-top: 40px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section article {  
+  display: flex;
+  flex-direction: row;
+  font-family: var(--ff-2);
+  font-size: 2rem;
+  padding: 2rem;
+  padding-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+section p {
+  width: 800px;
+  margin: 0 40px;
+  /* font-size: 40px; */
+  color: var(--text-color);
+  font-weight: 700;
+  text-align: center;
+  text-wrap: balance;
+}
+footer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+footer p {
+  margin: 0;
+  color: var(--text-color);
+  font-family: var(--ff-2);
+}
+
+footer div {
+  font-size: 36px;
+  display: flex;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+footer a i {
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+footer a:hover i {
+  transform: scale(1.2);
+}
+
+footer a:active i {
+  color: var(--accent-color);
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px){
+  header {
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+  }
+  .center{
+    visibility: hidden;  
+  }
+  .center-2{
+    visibility: visible;
+    transform: translateZ(-12px) scale(1.7);
+    margin-right: 4020px;
+    width: 856px;
+  }
+  span {
+    font-size: 24px;
+  }
+  section {
+    justify-content: center;
+    font-size: 1px;
+    background-image: url(./imgs/tile_background3.webp);
+    background-attachment: fixed;
+  }
+
+  section article {
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    padding: 0;
+  }
+  section article p {
+    width: auto;
+    margin-top: 40px;
+  }
+  section article img {
+    width: 360px;
+  }
+  
+  .text1, .text2 {
+    font-size: 20px;
+  }
+  .extra {
+    margin-bottom: 40px;
+  }
+  footer {
+    justify-content: space-around;
+  }
+  footer p {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 30px;
+  }
+
+}
+@media screen and (max-width: 820px) {
+  .wrapper {
+    max-width: 800px;
+  }
 }
